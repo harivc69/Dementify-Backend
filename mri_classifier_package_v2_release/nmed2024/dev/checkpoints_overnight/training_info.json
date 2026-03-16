@@ -1,0 +1,32 @@
+{
+  "start_time": "2025-10-12T23:09:42.620090",
+  "config": {
+    "train_path": "data/processed/train.csv",
+    "val_path": "data/processed/val.csv",
+    "test_path": "data/processed/test.csv",
+    "cnf_file": "data/toml_files/custom_nacc_config_no_img.toml",
+    "d_model": 128,
+    "nhead": 8,
+    "num_epochs": 150,
+    "batch_size": 32,
+    "lr": 5e-05,
+    "gamma": 2.0,
+    "weight_decay": 1e-05,
+    "ckpt_dir": "checkpoints_overnight",
+    "ckpt_interval": 10,
+    "resume_from": null,
+    "device": "cuda:0"
+  },
+  "device": "cuda:0",
+  "cuda_available": true,
+  "training_type": "overnight_optimized",
+  "optimization_notes": {
+    "d_model": "Increased to 128 for better capacity",
+    "nhead": "Increased to 8 for better attention",
+    "num_epochs": "Increased to 150 for better convergence",
+    "learning_rate": "Reduced to 5e-5 for stable long training",
+    "weight_decay": "Added 1e-5 for regularization"
+  },
+  "gpu_name": "NVIDIA RTX A4500",
+  "gpu_memory_gb": 19.98974609375
+}

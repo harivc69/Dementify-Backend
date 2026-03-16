@@ -1,0 +1,883 @@
+================================================================================
+TRAINING MASTER LOG - November 3, 2025
+Goal: Maximize epochs before 4:00 PM CST meeting
+================================================================================
+
+========================================
+Run Number: 1
+Start Time: 2025-11-03 12:34:26
+End Time: 2025-11-03 14:47:09
+Epochs: 35
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_4hr_20251103_123236.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_35.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 14:47:09
+End Time: 2025-11-03 14:58:09
+Epochs: 2
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_144709.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_2.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 14:58:16
+End Time: 2025-11-03 15:13:16
+Epochs: 3
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_145816.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_3.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 15:13:24
+End Time: 2025-11-03 15:32:24
+Epochs: 4
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_151324.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_4.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 15:32:31
+End Time: 2025-11-03 15:55:31
+Epochs: 5
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_153231.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_5.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 15:55:38
+End Time: 2025-11-03 16:20:38
+Epochs: 6
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_155538.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_6.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 16:20:46
+End Time: 2025-11-03 16:55:16
+Epochs: 7
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_162046.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_7.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 16:55:23
+End Time: 2025-11-03 17:31:23
+Epochs: 8
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_165523.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_8.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 17:31:30
+End Time: 2025-11-03 18:10:30
+Epochs: 9
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_173130.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_9.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 18:10:38
+End Time: 2025-11-03 18:50:38
+Epochs: 10
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_181038.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_10.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 18:50:45
+End Time: 2025-11-03 19:32:45
+Epochs: 11
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_185045.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_11.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 19:32:52
+End Time: 2025-11-03 20:17:22
+Epochs: 12
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_193252.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_12.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 20:17:30
+End Time: 2025-11-03 21:06:00
+Epochs: 13
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_201730.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_13.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 21:06:07
+End Time: 2025-11-03 22:01:07
+Epochs: 14
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_210607.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_14.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 22:01:14
+End Time: 2025-11-03 23:00:44
+Epochs: 15
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_220114.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_15.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-03 23:00:52
+End Time: 2025-11-04 00:03:52
+Epochs: 16
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251103_230052.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_16.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 00:03:59
+End Time: 2025-11-04 01:08:59
+Epochs: 17
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_000359.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_17.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 01:09:06
+End Time: 2025-11-04 02:15:06
+Epochs: 18
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_010906.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_18.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 02:15:14
+End Time: 2025-11-04 03:24:44
+Epochs: 19
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_021514.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_19.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 03:24:51
+End Time: 2025-11-04 04:37:51
+Epochs: 20
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_032451.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_20.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 04:37:59
+End Time: 2025-11-04 05:54:29
+Epochs: 21
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_043759.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_21.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 05:54:36
+End Time: 2025-11-04 07:14:36
+Epochs: 22
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_055436.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_22.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 07:14:43
+End Time: 2025-11-04 08:38:14
+Epochs: 23
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_071443.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_23.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 08:38:21
+End Time: 2025-11-04 10:05:51
+Epochs: 24
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_083821.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_24.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 10:05:58
+End Time: 2025-11-04 11:37:59
+Epochs: 25
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_100558.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_25.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 11:38:06
+End Time: 2025-11-04 13:12:36
+Epochs: 26
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_113806.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_26.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 13:12:43
+End Time: 2025-11-04 14:57:44
+Epochs: 27
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_131243.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_27.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 14:57:51
+End Time: 2025-11-04 16:55:51
+Epochs: 28
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_145751.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_28.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 16:55:58
+End Time: 2025-11-04 18:49:59
+Epochs: 29
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_165558.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_29.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 18:50:06
+End Time: 2025-11-04 20:40:06
+Epochs: 30
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_185006.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_30.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 20:40:13
+End Time: 2025-11-04 22:32:14
+Epochs: 31
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_204013.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_31.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-04 22:32:21
+End Time: 2025-11-05 00:28:51
+Epochs: 32
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251104_223221.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_32.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 00:28:58
+End Time: 2025-11-05 02:27:59
+Epochs: 33
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_002858.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_33.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 02:28:06
+End Time: 2025-11-05 04:31:06
+Epochs: 34
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_022806.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_34.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 04:31:14
+End Time: 2025-11-05 06:38:14
+Epochs: 35
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_043114.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_35.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 06:38:21
+End Time: 2025-11-05 08:56:22
+Epochs: 36
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_063821.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_36.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 08:56:29
+End Time: 2025-11-05 11:14:59
+Epochs: 37
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_085629.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_37.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 11:15:06
+End Time: 2025-11-05 13:34:07
+Epochs: 38
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_111506.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_38.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 13:34:14
+End Time: 2025-11-05 15:56:14
+Epochs: 39
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_133414.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_39.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 15:56:21
+End Time: 2025-11-05 18:21:22
+Epochs: 40
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_155621.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_40.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 18:21:29
+End Time: 2025-11-05 20:49:59
+Epochs: 41
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_182129.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_41.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 20:50:07
+End Time: 2025-11-05 23:20:07
+Epochs: 42
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_205007.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_42.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-05 23:20:14
+End Time: 2025-11-06 01:56:15
+Epochs: 43
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251105_232014.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_43.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 01:56:22
+End Time: 2025-11-06 04:34:52
+Epochs: 44
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_015622.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_44.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 04:34:59
+End Time: 2025-11-06 07:17:00
+Epochs: 45
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_043459.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_45.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 07:17:07
+End Time: 2025-11-06 10:03:38
+Epochs: 46
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_071707.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_46.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 10:03:45
+End Time: 2025-11-06 12:52:45
+Epochs: 47
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_100345.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_47.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 12:52:52
+End Time: 2025-11-06 15:47:23
+Epochs: 48
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_125252.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_48.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 15:47:30
+End Time: 2025-11-06 19:06:01
+Epochs: 49
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_154730.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_49.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 19:06:08
+End Time: 2025-11-06 22:32:38
+Epochs: 50
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_190608.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_50.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-06 22:32:46
+End Time: 2025-11-07 02:00:46
+Epochs: 51
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251106_223246.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_51.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-07 02:00:53
+End Time: 2025-11-07 05:34:24
+Epochs: 52
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251107_020053.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_52.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-07 05:34:31
+End Time: 2025-11-07 09:11:02
+Epochs: 53
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251107_053431.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_53.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-07 09:11:09
+End Time: 2025-11-07 12:50:39
+Epochs: 54
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251107_091109.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_54.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-07 12:50:47
+End Time: 2025-11-07 16:38:47
+Epochs: 55
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251107_125047.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_55.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-07 16:38:54
+End Time: 2025-11-07 20:08:25
+Epochs: 56
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251107_163854.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_56.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-07 20:08:32
+End Time: 2025-11-07 23:35:03
+Epochs: 57
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251107_200832.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_57.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-07 23:35:10
+End Time: 2025-11-08 03:03:11
+Epochs: 58
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251107_233510.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_58.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-08 03:03:18
+End Time: 2025-11-08 06:34:48
+Epochs: 59
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251108_030318.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_59.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-08 06:34:56
+End Time: 2025-11-08 10:10:56
+Epochs: 60
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251108_063456.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_60.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-08 10:11:03
+End Time: 2025-11-08 13:52:04
+Epochs: 61
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251108_101103.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_61.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-08 13:52:11
+End Time: 2025-11-08 17:44:12
+Epochs: 62
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251108_135211.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_62.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-08 17:44:19
+End Time: 2025-11-08 21:35:20
+Epochs: 63
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251108_174419.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_63.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-08 21:35:27
+End Time: 2025-11-09 01:31:27
+Epochs: 64
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251108_213527.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_64.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-09 01:31:35
+End Time: 2025-11-09 05:27:05
+Epochs: 65
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251109_013135.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_65.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-09 05:27:13
+End Time: 2025-11-09 09:28:43
+Epochs: 66
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251109_052713.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_66.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-09 09:28:50
+End Time: 2025-11-09 13:35:51
+Epochs: 67
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251109_092850.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_67.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-09 13:35:58
+End Time: 2025-11-09 17:46:59
+Epochs: 68
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251109_133558.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_68.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-09 17:47:06
+End Time: 2025-11-09 22:35:37
+Epochs: 69
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251109_174706.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_69.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-09 22:35:44
+End Time: 2025-11-10 03:22:15
+Epochs: 70
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251109_223544.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_70.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-10 03:22:22
+End Time: 2025-11-10 08:13:23
+Epochs: 71
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251110_032222.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_71.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-10 08:13:30
+End Time: 2025-11-10 12:48:31
+Epochs: 72
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251110_081330.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_72.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-10 12:48:38
+End Time: 2025-11-10 17:40:39
+Epochs: 73
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251110_124838.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_73.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-10 17:40:46
+End Time: 2025-11-10 22:08:17
+Epochs: 74
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251110_174046.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_74.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-10 22:08:24
+End Time: 2025-11-11 02:39:55
+Epochs: 75
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251110_220824.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_75.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-11 02:40:02
+End Time: 2025-11-11 07:13:33
+Epochs: 76
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251111_024002.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_76.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-11 07:13:40
+End Time: 2025-11-11 11:52:11
+Epochs: 77
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251111_071340.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_77.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-11 11:52:18
+End Time: 2025-11-11 16:32:49
+Epochs: 78
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251111_115218.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_78.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-11 16:32:56
+End Time: 2025-11-11 21:19:56
+Epochs: 79
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251111_163256.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_79.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-11 21:20:04
+End Time: 2025-11-12 02:07:34
+Epochs: 80
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251111_212004.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_80.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-12 02:07:41
+End Time: 2025-11-12 06:59:12
+Epochs: 81
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251112_020741.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_81.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-12 06:59:19
+End Time: 2025-11-12 11:50:20
+Epochs: 82
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251112_065919.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_82.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-12 11:50:27
+End Time: 2025-11-12 16:52:58
+Epochs: 83
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251112_115027.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_83.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-12 16:53:05
+End Time: 2025-11-12 21:57:06
+Epochs: 84
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251112_165305.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_84.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-12 21:57:13
+End Time: 2025-11-13 03:03:44
+Epochs: 85
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251112_215713.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_85.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-13 03:03:51
+End Time: 2025-11-13 08:12:52
+Epochs: 86
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251113_030351.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_86.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-13 08:12:59
+End Time: 2025-11-13 13:29:00
+Epochs: 87
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251113_081259.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_87.pt
+
+========================================
+Run Number: 
+Start Time: 2025-11-13 13:29:07
+End Time: 2025-11-13 18:52:08
+Epochs: 88
+Final Training Loss: 
+Final Validation Loss: 
+Log File: /home/vatsal/MRI_with_additional_features/nmed2024/dev/training_meeting_run_20251113_132907.log
+Checkpoint: /home/vatsal/MRI_with_additional_features/nmed2024/dev/checkpoints_corrected/final_model_epoch_88.pt
+

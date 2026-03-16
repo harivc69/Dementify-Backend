@@ -1,0 +1,92 @@
+{
+  "NC": {
+    "timestamp": "2026-03-05T17:13:32.096511",
+    "mri_path": "/tmp/release_validation_NC.nii.gz",
+    "stage1": {
+      "prediction": "Non-DE",
+      "de_probability": 0.2337020871577557,
+      "confidence": 0.7662979128422442
+    },
+    "stage2": {
+      "prediction": "IMCI",
+      "probabilities": {
+        "NC": 0.47487598715996565,
+        "IMCI": 0.5804718759134164,
+        "MCI": 0.5255928255560105
+      },
+      "confidence": 0.5804718759134164
+    },
+    "stage3": null,
+    "final_diagnosis": "IMCI",
+    "heatmaps": {
+      "heatmap_nifti": "/tmp/release_validation_output_NC/heatmap.nii.gz",
+      "brain_nifti": "/tmp/release_validation_output_NC/brain.nii.gz",
+      "overlay_nifti": "/tmp/release_validation_output_NC/overlay.nii.gz",
+      "stage": "stage1",
+      "target_class": 0,
+      "method": "gradcam_pp"
+    }
+  },
+  "MCI": {
+    "timestamp": "2026-03-05T17:13:41.496626",
+    "mri_path": "/tmp/release_validation_MCI.nii.gz",
+    "stage1": {
+      "prediction": "DE",
+      "de_probability": 0.5811739423107929,
+      "confidence": 0.5811739423107929
+    },
+    "stage2": null,
+    "stage3": {
+      "prediction": "AD",
+      "probabilities": {
+        "AD": 0.7386569469185605,
+        "LBD": 0.25501544669102144,
+        "VD": 0.4763323124402209,
+        "PRD": 0.3973158704417997,
+        "FTD": 0.07021758288867269,
+        "NPH": 0.0002416218117644242,
+        "SEF": 0.00015873668488994012,
+        "PSY": 0.00018932943759171432,
+        "ODE": 0.00018817706029561397
+      },
+      "confidence": 0.7386569469185605
+    },
+    "final_diagnosis": "AD",
+    "heatmaps": {
+      "heatmap_nifti": "/tmp/release_validation_output_MCI/heatmap.nii.gz",
+      "brain_nifti": "/tmp/release_validation_output_MCI/brain.nii.gz",
+      "overlay_nifti": "/tmp/release_validation_output_MCI/overlay.nii.gz",
+      "stage": "stage3",
+      "target_class": 0,
+      "method": "gradcam_pp"
+    }
+  },
+  "DE": {
+    "timestamp": "2026-03-05T17:13:47.776349",
+    "mri_path": "/tmp/release_validation_DE.nii.gz",
+    "stage1": {
+      "prediction": "Non-DE",
+      "de_probability": 0.3085636192009048,
+      "confidence": 0.6914363807990952
+    },
+    "stage2": {
+      "prediction": "MCI",
+      "probabilities": {
+        "NC": 0.43989099052115926,
+        "IMCI": 0.5563709430321324,
+        "MCI": 0.5771165128563939
+      },
+      "confidence": 0.5771165128563939
+    },
+    "stage3": null,
+    "final_diagnosis": "MCI",
+    "heatmaps": {
+      "heatmap_nifti": "/tmp/release_validation_output_DE/heatmap.nii.gz",
+      "brain_nifti": "/tmp/release_validation_output_DE/brain.nii.gz",
+      "overlay_nifti": "/tmp/release_validation_output_DE/overlay.nii.gz",
+      "stage": "stage1",
+      "target_class": 0,
+      "method": "gradcam_pp"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "start_time": "2025-11-13T18:54:52.282606",
+  "features": 187,
+  "train_samples": 40453,
+  "val_samples": 8648,
+  "config": {
+    "d_model": 128,
+    "nhead": 8,
+    "num_encoder_layers": 6,
+    "num_decoder_layers": 6,
+    "epochs": 89,
+    "batch_size": 32,
+    "lr": 5e-05,
+    "weight_decay": 1e-05
+  },
+  "device": "cuda",
+  "gpu_name": "NVIDIA RTX A4500"
+}

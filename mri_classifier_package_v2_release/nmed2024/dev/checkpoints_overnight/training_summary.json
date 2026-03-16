@@ -1,0 +1,9 @@
+{
+  "end_time": "2025-10-13T00:13:32.972823",
+  "total_training_time_minutes": 63.8247088154157,
+  "total_training_time_hours": 1.063745146923595,
+  "epochs_completed": 150,
+  "final_checkpoint": "checkpoints_overnight/final_model_epoch_150.pt",
+  "best_checkpoint": "checkpoints_overnight/best_model.pt",
+  "average_time_per_epoch_seconds": 25.52988352616628
+}

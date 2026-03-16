@@ -1,0 +1,42 @@
+# MRI + Tabular Cognitive Classifier v2.0 - Pinned Requirements
+# Generated from working conda environment: hierarchical_model_env
+# Python 3.10, CUDA 12.6
+
+# Core ML Framework
+torch==2.7.1
+torchvision==0.22.1
+
+# Data Processing
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.3
+scikit-learn==1.7.0
+
+# Configuration
+tomli==2.3.0
+toml==0.10.2
+
+# Medical Imaging
+nibabel==5.3.2
+deepbet==1.0.2
+SimpleITK==2.4.1
+
+# Explainability
+shap==0.48.0
+captum==0.8.0
+numba==0.61.2
+
+# Visualization
+matplotlib==3.10.0
+pillow==11.3.0
+
+# Medical Imaging Toolkit
+monai==1.5.1
+
+# Utilities
+tqdm==4.67.1
+
+# CUDA libraries (installed via pip with torch)
+# nvidia-cublas-cu12==12.6.4.1
+# nvidia-cuda-runtime-cu12==12.6.77
+# nvidia-cudnn-cu12==9.5.1.17

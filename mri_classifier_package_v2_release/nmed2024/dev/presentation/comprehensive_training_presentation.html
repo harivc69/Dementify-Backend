@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADRD Model Training & Evaluation - Comprehensive Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .slide {
+            min-height: 100vh;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: white;
+            margin-bottom: 2px;
+        }
+        
+        .slide-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .slide-subtitle {
+            font-size: 32px;
+            font-weight: 600;
+            color: #764ba2;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .title-slide {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .title-slide h1 {
+            font-size: 72px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .title-slide h2 {
+            font-size: 36px;
+            font-weight: 300;
+            margin-bottom: 50px;
+        }
+        
+        .title-slide .meta {
+            font-size: 24px;
+            margin-top: 50px;
+            opacity: 0.9;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .metric-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .metric-card .value {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .metric-card .label {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        
+        .chart-container {
+            width: 100%;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        
+        .glossary {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .glossary-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .glossary-item .abbr {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 18px;
+        }
+        
+        .glossary-item .full {
+            color: #555;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        
+        .architecture-diagram {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        .flow-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .flow-box h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .flow-box p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .flow-arrow {
+            font-size: 36px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .spec-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-size: 18px;
+        }
+        
+        .spec-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        
+        .spec-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .spec-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .highlight-box h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        ul.feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul.feature-list li {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        ul.feature-list li strong {
+            color: #667eea;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        
+        .toc ol {
+            font-size: 20px;
+            line-height: 2;
+            padding-left: 30px;
+        }
+        
+        .toc ol li {
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .glossary {
+            margin: 40px 0;
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .glossary-item {
+            background: white;
+            border-left: 5px solid #667eea;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .glossary-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .glossary-item .abbr {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .glossary-item .full {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .architecture-diagram {
+            margin: 40px 0;
+        }
+
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .flow-box {
+            background: white;
+            border: 3px solid #667eea;
+            border-radius: 15px;
+            padding: 20px;
+            min-width: 150px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .flow-box h4 {
+            margin: 0 0 10px 0;
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        .flow-box p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .flow-arrow {
+            font-size: 36px;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        @media print {
+            .slide {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide title-slide">
+    <h1>ADRD Model Training & Evaluation</h1>
+    <h2>Transformer-Based Multi-Label Classification for<br>Alzheimer's Disease and Related Dementias</h2>
+    <div class="meta">
+        <p>Model Evaluation Results</p>
+        <p>November 3, 2025</p>
+    </div>
+</div>
+
+<!-- Slide 2: Table of Contents -->
+<div class="slide">
+    <h2 class="slide-title">Presentation Overview</h2>
+    <div class="toc">
+        <ol>
+            <li>Executive Summary</li>
+            <li>Diagnostic Categories Glossary</li>
+            <li>Dataset Overview & Distribution</li>
+            <li>Feature Analysis</li>
+            <li>Model Architecture & Specifications</li>
+            <li>Overall Performance Metrics</li>
+            <li>Confusion Matrix</li>
+            <li>ROC Curves</li>
+            <li>Precision-Recall Curves</li>
+            <li>Performance Heatmap</li>
+            <li>Per-Category Performance Analysis</li>
+            <li>Detailed Performance Table</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Slide 3: Executive Summary -->
+<div class="slide">
+    <h2 class="slide-title">Executive Summary</h2>
+
+    <div class="highlight-box">
+        <h3>Model Overview</h3>
+        <p>Transformer-based deep learning model for multi-label classification of Alzheimer's Disease and Related Dementias (ADRD) using 187 numerical clinical features across 57,569 patient records.</p>
+    </div>
+
+    <div class="content-grid">
+        <div class="metric-card">
+            <h3>Total Samples</h3>
+            <div class="value">57,569</div>
+            <div class="label">Patient Records</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>Input Features</h3>
+            <div class="value">187</div>
+            <div class="label">Numerical Clinical Features</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>Diagnostic Categories</h3>
+            <div class="value">13</div>
+            <div class="label">ADRD Classifications</div>
+        </div>
+    </div>
+
+    <div class="content-grid" style="margin-top: 30px;">
+        <div class="metric-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <h3>Overall Accuracy</h3>
+            <div class="value">90.2%</div>
+            <div class="label">Test Set (n=8,468)</div>
+        </div>
+
+        <div class="metric-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <h3>Macro F1 Score</h3>
+            <div class="value">0.234</div>
+            <div class="label">Across All Categories</div>
+        </div>
+
+        <div class="metric-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+            <h3>Maximum AUC</h3>
+            <div class="value">0.944</div>
+            <div class="label">Alzheimer's Disease</div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 4: Diagnostic Categories Glossary -->
+<div class="slide">
+    <h2 class="slide-title">Diagnostic Categories Glossary</h2>
+    <p style="text-align: center; font-size: 18px; margin-bottom: 20px; color: #555;">
+        Hierarchical Multi-Label Classification System (13 Categories)
+    </p>
+
+    <div class="two-column">
+        <div>
+            <h3 class="slide-subtitle">Cognitive Status (Mutually Exclusive)</h3>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">Based on NACC NACCUDSD primary diagnosis variable</p>
+            <div class="glossary">
+                <div class="glossary-grid">
+                    <div class="glossary-item">
+                        <div class="abbr">NC</div>
+                        <div class="full">Normal Cognition</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">IMCI</div>
+                        <div class="full">Impaired Not MCI</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">MCI</div>
+                        <div class="full">Mild Cognitive Impairment</div>
+                    </div>
+                    <div class="glossary-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                        <div class="abbr" style="color: white;">DE</div>
+                        <div class="full" style="color: white;"><strong>Dementia (Umbrella Category)</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="slide-subtitle">Dementia Etiologies (Multi-Label)</h3>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">Specific causes - only assigned when DE=1</p>
+            <div class="glossary">
+                <div class="glossary-grid">
+                    <div class="glossary-item">
+                        <div class="abbr">AD</div>
+                        <div class="full">Alzheimer's Disease</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">LBD</div>
+                        <div class="full">Lewy Body Dementia</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">VD</div>
+                        <div class="full">Vascular Dementia</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">FTD</div>
+                        <div class="full">Frontotemporal Dementia</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">PRD</div>
+                        <div class="full">Parkinson's Disease Dementia</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">NPH</div>
+                        <div class="full">Normal Pressure Hydrocephalus</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">SEF</div>
+                        <div class="full">Seizure Disorder</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">PSY</div>
+                        <div class="full">Psychiatric Disorder</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">TBI</div>
+                        <div class="full">Traumatic Brain Injury</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="abbr">ODE</div>
+                        <div class="full">Other Dementia Etiologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 30px;">
+        <h3>Hierarchical Relationship</h3>
+        <p><strong>Key Point:</strong> "Dementia (DE)" is an umbrella category indicating the patient has dementia. The specific etiology labels (AD, LBD, VD, FTD, etc.) indicate which type(s) of dementia. All patients with specific etiologies (e.g., AD=1) automatically have DE=1. Patients can have multiple concurrent etiologies (e.g., AD + VD for mixed dementia).</p>
+        <p style="margin-top: 10px;"><strong>Example:</strong> A patient with Alzheimer's disease would have: DE=1, AD=1, and all other labels=0.</p>
+    </div>
+</div>
+
+<!-- Slide 5: Dataset Overview -->
+<div class="slide">
+    <h2 class="slide-title">Dataset Overview & Distribution</h2>
+
+    <div class="two-column">
+        <div>
+            <h3 class="slide-subtitle">Dataset Composition</h3>
+            <table class="spec-table">
+                <tr>
+                    <th>Split</th>
+                    <th>Samples</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td><strong>Training Set</strong></td>
+                    <td>40,453</td>
+                    <td>70.3%</td>
+                </tr>
+                <tr>
+                    <td><strong>Validation Set</strong></td>
+                    <td>8,648</td>
+                    <td>15.0%</td>
+                </tr>
+                <tr>
+                    <td><strong>Test Set</strong></td>
+                    <td>8,468</td>
+                    <td>14.7%</td>
+                </tr>
+                <tr style="background: #f8f9fa; font-weight: bold;">
+                    <td><strong>Total</strong></td>
+                    <td><strong>57,569</strong></td>
+                    <td><strong>100%</strong></td>
+                </tr>
+            </table>
+
+            <div class="highlight-box" style="margin-top: 30px;">
+                <h3>📊 Data Source</h3>
+                <p>National Alzheimer's Coordinating Center (NACC) database - a comprehensive, longitudinal dataset from 39 Alzheimer's Disease Research Centers across the United States.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="chart-container">
+                <img src="dataset_distribution.png" alt="Dataset Distribution">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 6: Feature Analysis -->
+<div class="slide">
+    <h2 class="slide-title">Feature Analysis: 187 Numerical Features</h2>
+    
+    <div class="chart-container">
+        <img src="feature_distribution.png" alt="Feature Distribution" style="max-width: 90%;">
+    </div>
+    
+    <div class="two-column" style="margin-top: 40px;">
+        <div>
+            <h3 class="slide-subtitle">Feature Categories</h3>
+            <ul class="feature-list">
+                <li><strong>Historical & Demographic (his_*):</strong> 27 features including age, sex, education, family history, lifestyle factors (smoking, alcohol), and medical history</li>
+                <li><strong>Medication History (med_*):</strong> 23 features covering current medications for various conditions including antidepressants, antihypertensives, and dementia medications</li>
+                <li><strong>Physical Examination (ph_*):</strong> 11 features including vital signs (blood pressure, heart rate), BMI, vision, and hearing assessments</li>
+            </ul>
+        </div>
+        
+        <div>
+            <ul class="feature-list">
+                <li><strong>Clinical Examination (exam_*):</strong> 64 features covering neurological examination findings including motor function, gait, reflexes, and cognitive symptoms</li>
+                <li><strong>Cognitive Battery Tests (bat_*):</strong> 5 features from standardized cognitive assessments including MMSE (Mini-Mental State Examination) and MoCA (Montreal Cognitive Assessment)</li>
+            </ul>
+            
+            <div class="highlight-box" style="margin-top: 20px;">
+                <h3>Feature Properties</h3>
+                <p>All 187 features are numerical, enabling direct processing by the transformer model without categorical encoding.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 7: Model Architecture -->
+<div class="slide">
+    <h2 class="slide-title">Model Architecture</h2>
+    <h3 class="slide-subtitle">Transformer-Based Deep Learning Model</h3>
+    
+    <div class="architecture-diagram">
+        <div class="flow-diagram">
+            <div class="flow-box">
+                <h4>Input Layer</h4>
+                <p>187 Numerical Features</p>
+                <p style="margin-top: 10px; font-size: 12px;">Patient clinical data</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-box">
+                <h4>Embedding Layer</h4>
+                <p>d_model = 128</p>
+                <p style="margin-top: 10px; font-size: 12px;">Feature projection</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-box">
+                <h4>Transformer Encoder</h4>
+                <p>6 Layers</p>
+                <p style="margin-top: 10px; font-size: 12px;">8 attention heads</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-box">
+                <h4>Transformer Decoder</h4>
+                <p>6 Layers</p>
+                <p style="margin-top: 10px; font-size: 12px;">8 attention heads</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-box">
+                <h4>Output Layer</h4>
+                <p>13 Diagnostic Labels</p>
+                <p style="margin-top: 10px; font-size: 12px;">Multi-label predictions</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="two-column" style="margin-top: 40px;">
+        <div>
+            <h3 class="slide-subtitle">Architecture Specifications</h3>
+            <table class="spec-table">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Model Dimension (d_model)</td>
+                    <td>128</td>
+                </tr>
+                <tr>
+                    <td>Attention Heads (nhead)</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Encoder Layers</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Decoder Layers</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Feedforward Dimension</td>
+                    <td>512</td>
+                </tr>
+                <tr>
+                    <td>Dropout Rate</td>
+                    <td>0.1</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h3 class="slide-subtitle">Training Configuration</h3>
+            <table class="spec-table">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Optimizer</td>
+                    <td>AdamW</td>
+                </tr>
+                <tr>
+                    <td>Learning Rate</td>
+                    <td>5 × 10<sup>-5</sup></td>
+                </tr>
+                <tr>
+                    <td>Batch Size</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>Weight Decay</td>
+                    <td>1 × 10<sup>-5</sup></td>
+                </tr>
+                <tr>
+                    <td>Device</td>
+                    <td>NVIDIA RTX A4500 (20GB)</td>
+                </tr>
+                <tr>
+                    <td>Framework</td>
+                    <td>PyTorch 2.7.1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Slide 10: Overall Performance -->
+<div class="slide">
+    <h2 class="slide-title">Overall Performance Metrics</h2>
+    <h3 class="slide-subtitle">Test Set Evaluation (8,468 Samples)</h3>
+    
+    <div class="content-grid">
+        <div class="metric-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <h3>Overall Accuracy</h3>
+            <div class="value">90.2%</div>
+            <div class="label">Correct Predictions</div>
+        </div>
+        
+        <div class="metric-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <h3>Macro Precision</h3>
+            <div class="value">0.197</div>
+            <div class="label">Average Across Labels</div>
+        </div>
+        
+        <div class="metric-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <h3>Macro Recall</h3>
+            <div class="value">0.444</div>
+            <div class="label">Average Across Labels</div>
+        </div>
+        
+        <div class="metric-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+            <h3>Macro F1 Score</h3>
+            <div class="value">0.234</div>
+            <div class="label">Harmonic Mean</div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Slide 7: Confusion Matrix -->
+<div class="slide">
+    <h2 class="slide-title">Confusion Matrix</h2>
+    <h3 class="slide-subtitle">Normalized Confusion Matrix for Top 8 Diagnostic Categories</h3>
+
+    <div class="chart-container">
+        <img src="confusion_matrix.png" alt="Confusion Matrix" style="max-width: 95%;">
+    </div>
+</div>
+
+<!-- Slide 8: ROC Curves -->
+<div class="slide">
+    <h2 class="slide-title">ROC Curves by Diagnostic Category</h2>
+    <h3 class="slide-subtitle">Receiver Operating Characteristic Curves</h3>
+
+    <div class="chart-container">
+        <img src="roc_curves.png" alt="ROC Curves" style="max-width: 95%;">
+    </div>
+</div>
+
+<!-- Slide 9: Precision-Recall Curves -->
+<div class="slide">
+    <h2 class="slide-title">Precision-Recall Curves by Diagnostic Category</h2>
+    <h3 class="slide-subtitle">Precision-Recall Trade-off Analysis</h3>
+
+    <div class="chart-container">
+        <img src="precision_recall_curves.png" alt="Precision-Recall Curves" style="max-width: 95%;">
+    </div>
+</div>
+
+<!-- Slide 10: Performance Heatmap -->
+<div class="slide">
+    <h2 class="slide-title">Performance Heatmap</h2>
+    <h3 class="slide-subtitle">Metrics Across All Diagnostic Categories</h3>
+
+    <div class="chart-container">
+        <img src="performance_heatmap.png" alt="Performance Heatmap" style="max-width: 95%;">
+    </div>
+</div>
+
+<!-- Slide 11: Per-Category Performance Analysis -->
+<div class="slide">
+    <h2 class="slide-title">Per-Category Performance Analysis</h2>
+    <h3 class="slide-subtitle">Top 8 Categories by Sample Size</h3>
+
+    <div class="two-column">
+        <div>
+            <h3 class="slide-subtitle">Normal Cognition (NC)</h3>
+            <table class="spec-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>F1 Score</td>
+                    <td><strong>0.881</strong></td>
+                </tr>
+                <tr>
+                    <td>Precision</td>
+                    <td>0.821</td>
+                </tr>
+                <tr>
+                    <td>Recall</td>
+                    <td>0.952</td>
+                </tr>
+                <tr>
+                    <td>AUC</td>
+                    <td>0.866</td>
+                </tr>
+                <tr>
+                    <td>Test Samples</td>
+                    <td>5,467 (64.6%)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h3 class="slide-subtitle">Dementia (DE)</h3>
+            <table class="spec-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>F1 Score</td>
+                    <td><strong>0.739</strong></td>
+                </tr>
+                <tr>
+                    <td>Precision</td>
+                    <td>0.636</td>
+                </tr>
+                <tr>
+                    <td>Recall</td>
+                    <td>0.882</td>
+                </tr>
+                <tr>
+                    <td>AUC</td>
+                    <td>0.939</td>
+                </tr>
+                <tr>
+                    <td>Test Samples</td>
+                    <td>1,256 (14.8%)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px;">
+        <div class="two-column">
+            <div>
+                <h3 class="slide-subtitle">Alzheimer's Disease (AD)</h3>
+                <table class="spec-table">
+                    <tr>
+                        <th>Metric</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>F1 Score</td>
+                        <td><strong>0.643</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Precision</td>
+                        <td>0.498</td>
+                    </tr>
+                    <tr>
+                        <td>Recall</td>
+                        <td>0.910</td>
+                    </tr>
+                    <tr>
+                        <td>AUC</td>
+                        <td>0.944</td>
+                    </tr>
+                    <tr>
+                        <td>Test Samples</td>
+                        <td>990 (11.7%)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <h3 class="slide-subtitle">Mild Cognitive Impairment (MCI)</h3>
+                <table class="spec-table">
+                    <tr>
+                        <th>Metric</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>F1 Score</td>
+                        <td><strong>0.420</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Precision</td>
+                        <td>0.406</td>
+                    </tr>
+                    <tr>
+                        <td>Recall</td>
+                        <td>0.435</td>
+                    </tr>
+                    <tr>
+                        <td>AUC</td>
+                        <td>0.716</td>
+                    </tr>
+                    <tr>
+                        <td>Test Samples</td>
+                        <td>1,433 (16.9%)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 14: Per-Label Detailed Performance -->
+<div class="slide">
+    <h2 class="slide-title">Detailed Performance by Category</h2>
+    
+    <table class="spec-table">
+        <tr>
+            <th>Diagnostic Category</th>
+            <th>Samples</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F1 Score</th>
+            <th>AUC</th>
+        </tr>
+        <tr style="background: #e8f5e9;">
+            <td><strong>Normal Cognition</strong></td>
+            <td>5,467</td>
+            <td>0.821</td>
+            <td>0.952</td>
+            <td><strong>0.881</strong></td>
+            <td>0.866</td>
+        </tr>
+        <tr>
+            <td><strong>Impaired Not MCI</strong></td>
+            <td>312</td>
+            <td>0.064</td>
+            <td>0.202</td>
+            <td>0.097</td>
+            <td>0.650</td>
+        </tr>
+        <tr>
+            <td><strong>Mild Cognitive Impairment</strong></td>
+            <td>1,433</td>
+            <td>0.406</td>
+            <td>0.435</td>
+            <td>0.420</td>
+            <td>0.727</td>
+        </tr>
+        <tr style="background: #e8f5e9;">
+            <td><strong>Dementia</strong></td>
+            <td>1,256</td>
+            <td>0.636</td>
+            <td>0.882</td>
+            <td><strong>0.739</strong></td>
+            <td>0.939</td>
+        </tr>
+        <tr style="background: #e8f5e9;">
+            <td><strong>Alzheimer's Disease</strong></td>
+            <td>990</td>
+            <td>0.498</td>
+            <td>0.910</td>
+            <td><strong>0.643</strong></td>
+            <td><strong>0.944</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Lewy Body Dementia</strong></td>
+            <td>105</td>
+            <td>0.067</td>
+            <td>0.886</td>
+            <td>0.125</td>
+            <td>0.916</td>
+        </tr>
+        <tr>
+            <td><strong>Vascular Dementia</strong></td>
+            <td>117</td>
+            <td>0.056</td>
+            <td>0.880</td>
+            <td>0.105</td>
+            <td>0.885</td>
+        </tr>
+        <tr>
+            <td><strong>Frontotemporal Dementia</strong></td>
+            <td>32</td>
+            <td>0.015</td>
+            <td>0.625</td>
+            <td>0.029</td>
+            <td>0.666</td>
+        </tr>
+    </table>
+    
+    <p style="text-align: center; margin-top: 30px; font-size: 16px; color: #555;">
+        <em>Green highlighting indicates top-performing categories (F1 > 0.6 or AUC > 0.9)</em>
+    </p>
+</div>
+
+
+
+<!-- Final Slide: Thank You -->
+<div class="slide title-slide">
+    <h1>Thank You</h1>
+    <h2 style="margin-top: 50px;">Questions & Discussion</h2>
+    
+    <div class="meta" style="margin-top: 80px;">
+        <p><strong>Project:</strong> ADRD Multi-Label Classification</p>
+        <p><strong>Training Session:</strong> November 3, 2025</p>
+        <p><strong>Model:</strong> Transformer-Based Deep Learning</p>
+        <p><strong>Dataset:</strong> NACC (57,569 samples)</p>
+    </div>
+    
+    <div style="margin-top: 60px; font-size: 18px; opacity: 0.9;">
+        <p>📧 For more information or collaboration opportunities, please contact the research team.</p>
+    </div>
+</div>
+
+</body>
+</html>
+

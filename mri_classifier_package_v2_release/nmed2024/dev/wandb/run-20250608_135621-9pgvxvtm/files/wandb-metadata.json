@@ -1,0 +1,96 @@
+{
+  "os": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.11",
+  "startedAt": "2025-06-08T18:56:21.492697Z",
+  "args": [
+    "--data_path",
+    "/mnt/d/NACC/converted_data-5000-aforms-b1b2b8-c1c2c2t-apoe-cdr.csv",
+    "--train_path",
+    "/mnt/d/NACC/demo_train.csv",
+    "--vld_path",
+    "/mnt/d/NACC/demo_vld.csv",
+    "--test_path",
+    "/mnt/d/NACC/demo_test.csv",
+    "--cnf_file",
+    "/mnt/d/hahmed/nmed2024/dev/data/toml_files/default_conf_new.toml",
+    "--ckpt_path",
+    "/mnt/d/hahmed/nmed2024/dev/ssl_mri/pretrained_models/ckpt_swinunetr_stripped_MNI.pt",
+    "--d_model",
+    "256",
+    "--nhead",
+    "1",
+    "--num_epochs",
+    "256",
+    "--batch_size",
+    "128",
+    "--lr",
+    "0.001",
+    "--gamma",
+    "0",
+    "--img_mode",
+    "-1",
+    "--img_net",
+    "NonImg",
+    "--img_size",
+    "(182,218,182)",
+    "--imgnet_ckpt",
+    "/mnt/d/hahmed/nmed2024/dev/ssl_mri/pretrained_models/model_swinvit.pt",
+    "--patch_size",
+    "16",
+    "--ckpt_path",
+    "/mnt/d/hahmed/nmed2024/dev/ssl_mri/pretrained_models/ckpt_swinunetr_stripped_MNI.pt",
+    "--cnf_file",
+    "/mnt/d/hahmed/nmed2024/dev/data/toml_files/default_conf_new.toml",
+    "--train_path",
+    "/mnt/d/NACC/demo_train.csv",
+    "--vld_path",
+    "/mnt/d/NACC/demo_vld.csv",
+    "--data_path",
+    "/mnt/d/NACC/converted_data-5000-aforms-b1b2b8-c1c2c2t-apoe-cdr.csv",
+    "--fusion_stage",
+    "middle",
+    "--imgnet_layers",
+    "4",
+    "--weight_decay",
+    "0.0005",
+    "--ranking_loss",
+    "--save_intermediate_ckpts",
+    "--wandb"
+  ],
+  "program": "/mnt/d/hahmed/nmed2024/dev/train.py",
+  "codePath": "dev/train.py",
+  "git": {
+    "remote": "https://github.com/vkola-lab/nmed2024.git",
+    "commit": "90dda6cd3f6e81b4e4609ffd2b417f14d6dd9a15"
+  },
+  "email": "ahmedhumza94@gmail.com",
+  "root": "/mnt/d/hahmed/nmed2024/dev",
+  "host": "BUS-27J2D14",
+  "executable": "/mnt/d/hahmed/py_envs/nmed/bin/python",
+  "codePathLocal": "train.py",
+  "cpu_count": 28,
+  "cpu_count_logical": 56,
+  "gpu": "NVIDIA RTX A4500",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1081101176832",
+      "used": "5215744000"
+    }
+  },
+  "memory": {
+    "total": "16365776896"
+  },
+  "cpu": {
+    "count": 28,
+    "countLogical": 56
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX A4500",
+      "memoryTotal": "21464350720",
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.5"
+}

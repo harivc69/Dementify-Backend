@@ -1,0 +1,40 @@
+name: hierarchical_classifier
+channels:
+  - defaults
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    # Core ML Framework
+    - torch==2.9.1
+    - torchvision==0.24.1
+
+    # Data Processing
+    - numpy==2.2.6
+    - pandas==2.3.3
+    - scipy==1.15.3
+    - scikit-learn==1.7.2
+
+    # Configuration
+    - toml==0.10.2
+
+    # Explainability
+    - shap==0.49.1
+    - numba==0.63.1
+
+    # Medical Imaging
+    - monai==1.5.1
+    - pillow==12.1.0
+
+    # Utilities
+    - tqdm==4.67.1
+    - icecream==2.1.8
+
+    # Web/API (for examples)
+    - flask==3.1.2
+    - flask-cors==6.0.2
+
+    # Experiment Tracking
+    - wandb==0.24.0

@@ -1,0 +1,60 @@
+TRAINING DATA SUMMARY
+================================================================================
+
+Total cases: 14,095
+  Train: 9,865
+  Val:   2,115
+  Test:  2,115
+
+Features: 30
+Labels: 14
+
+Label distribution (train set):
+--------------------------------------------------------------------------------
+  NC         Positive: 5,155 ( 52.3%)  Negative: 4,710
+  IMCI       Positive:   235 (  2.4%)  Negative: 9,630
+  MCI        Positive: 1,956 ( 19.8%)  Negative: 7,909
+  DE         Positive: 2,519 ( 25.5%)  Negative: 7,346
+  AD         Positive: 1,992 ( 20.2%)  Negative: 7,873
+  LBD        Positive:   257 (  2.6%)  Negative: 9,608
+  VD         Positive:   242 (  2.5%)  Negative: 9,623
+  PRD        Positive:     8 (  0.1%)  Negative: 9,857
+  FTD        Positive:   376 (  3.8%)  Negative: 9,489
+  NPH        Positive:     6 (  0.1%)  Negative: 9,859
+  SEF        Positive:    66 (  0.7%)  Negative: 9,799
+  PSY        Positive:    57 (  0.6%)  Negative: 9,808
+  TBI        Positive:    18 (  0.2%)  Negative: 9,847
+  ODE        Positive:    75 (  0.8%)  Negative: 9,790
+
+Feature missingness (train set):
+--------------------------------------------------------------------------------
+  his_NACCAGE                      0.00%
+  his_SEX                          0.00%
+  his_EDUC                         0.00%
+  his_HISPANIC                     0.36%
+  med_NACCLIPL                     0.73%
+  med_NACCADEP                     0.73%
+  med_NACCAHTN                     0.73%
+  med_ANYMEDS                      0.73%
+  med_NACCADMD                     0.73%
+  his_RACE                         0.76%
+  ph_WEIGHT                        6.83%
+  ph_HEIGHT                        7.98%
+  ph_NACCBMI                       8.75%
+  exam_NORMEXAM                   10.30%
+  exam_PARKSIGN                   10.30%
+  ph_HRATE                        10.52%
+  ph_BPDIAS                       12.67%
+  ph_BPSYS                        12.67%
+  bat_MOCATOTS                    14.16%
+  bat_NACCMOCA                    14.16%
+  apoe_NACCNE4S                   21.51%
+  his_HYPERTEN                    62.24%
+  his_DIABETES                    62.29%
+  his_CVHATT                      62.29%
+  his_CBSTROKE                    62.32%
+  his_PD                          62.34%
+  his_SEIZURES                    62.35%
+  his_TBI                         72.73%
+  bat_NACCMMSE                    85.84%
+  exam_GAITDIS                    90.12%
